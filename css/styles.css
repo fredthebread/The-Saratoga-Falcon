@@ -1,0 +1,14 @@
+@font-face {
+	font-family: 'Optima';
+	src: url('font/optima.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* General */
+
+
+/* Navigation */
+nav {
+	font-family: 'Optima';
+}
