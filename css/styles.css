@@ -32,19 +32,59 @@
   font-style: normal;
 }
 @font-face {
-	font-family: 'Helvetica';
-	src: url('font/Helvetica.ttf') format('truetype');
-	src: url('font/Helvetica.woff') format('woff'),
-		 url('font/Helvetica.eot'),
-		 url('font/Helvetica.svg#Helvetica') format('svg');
-	font-weight: normal;
-	font-style: normal;
+  font-family: 'HelveticaNeue-CondensedBlack';
+  src: url('font/HelveticaNeue-CondensedBlack.eot');
+  src: url('font/HelveticaNeue-CondensedBlack.woff2') format('woff2'),
+       url('font/HelveticaNeue-CondensedBlack.woff') format('woff'),
+       url('font/HelveticaNeue-CondensedBlack.ttf') format('truetype'),
+       url('font/HelveticaNeue-CondensedBlack.svg#HelveticaNeue-CondensedBlack') format('svg'),
+       url('font/HelveticaNeue-CondensedBlack.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
-	font-family: 'Helvetica-Italics';
-	src: url('font/Helvetica-Italics.ttf') format('truetype');
-	font-weight: normal;
-	font-style: italic;
+  font-family: 'HelveticaNeue-Medium';
+  src: url('font/HelveticaNeue-Medium.eot');
+  src: url('font/HelveticaNeue-Medium.woff2') format('woff2'),
+       url('font/HelveticaNeue-Medium.woff') format('woff'),
+       url('font/HelveticaNeue-Medium.ttf') format('truetype'),
+       url('font/HelveticaNeue-Medium.svg#HelveticaNeue-Medium') format('svg'),
+       url('font/HelveticaNeue-Medium.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MinionPro-BoldCn';
+  src: url('font/MinionPro-BoldCn.eot');
+  src: url('font/MinionPro-BoldCn.woff2') format('woff2'),
+       url('font/MinionPro-BoldCn.woff') format('woff'),
+       url('font/MinionPro-BoldCn.ttf') format('truetype'),
+       url('font/MinionPro-BoldCn.svg#MinionPro-BoldCn') format('svg'),
+       url('font/MinionPro-BoldCn.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MinionPro-Medium';
+  src: url('font/MinionPro-Medium.eot');
+  src: url('font/MinionPro-Medium.woff2') format('woff2'),
+       url('font/MinionPro-Medium.woff') format('woff'),
+       url('font/MinionPro-Medium.ttf') format('truetype'),
+       url('font/MinionPro-Medium.svg#MinionPro-Medium') format('svg'),
+       url('font/MinionPro-Medium.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MinionPro-Regular';
+  src: url('font/MinionPro-Regular.eot');
+  src: url('font/MinionPro-Regular.woff2') format('woff2'),
+       url('font/MinionPro-Regular.woff') format('woff'),
+       url('font/MinionPro-Regular.ttf') format('truetype'),
+       url('font/MinionPro-Regular.svg#MinionPro-Regular') format('svg'),
+       url('font/MinionPro-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 /************* General *************/
@@ -66,11 +106,11 @@ html, body {
 }
 html a {
     color: #000000;
-    font-weight: bold;
+    /*font-weight: bold;*/
     text-decoration: none;
 }
 html a:hover {
-    color: #C7312D;
+    color: #616161;
     text-decoration: none;
 }
 .container{
@@ -80,29 +120,73 @@ html a:hover {
 	margin-left: 0px;
 	margin-right: 0px
 }
+h1{
+	font-family: "Optima-Regular";
+	font-size: 2em;
+	margin-bottom: 0px;
+}
 h2{
-	font-size: 1.1em;
+	font-size: 1.4em;
+	line-height: 103%;
 	margin: 0px 0px 0px 0px;
 }
 p{
-	font-size: 0.8em;
+	font-size: 0.9em;
 	line-height: 105%;
 	margin: 0px 0px 0px 0px;
 }
-.compact-img{
-
+.category{
+	font-family: 'HelveticaNeue-CondensedBlack';
+	font-size: 0.55em;
+	color: #C63135;
 }
 
-#logo-img{
+/************ Header ***********/
+header #masthead-img{
 	background: url('../img/banner.png');
-	width: 517px;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: calc(100%-517px);
 	height: 100px;
 	margin: 10px 15px 10px 0;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0px;
+}
+
+header #upper-info{
+	position: relative;
+	display: block;
+	height: 20px;
+}
+header #upper-location{
+	position: absolute;
+	text-align: left;
+}
+header #upper-date{
+	position: absolute;
+	text-align: right;
 }
 
 /*********** Navigation *************/
 nav {
 	font-family: 'Optima-Regular';
+	font-size: 1em;
+	text-transform: uppercase;
+}
+#head-nav nav{
+	padding: 0px;
+	border-left: 15px solid #C8322E;
+	border-right: 15px solid #C8322E;
+	background-color: #EEEEEE;
+}
+#head-nav nav a{
+	padding: 0px 15px 0px 15px;
+	line-height: 50px;
+}
+#head-nav nav a:hover{
+	color: #C8322E;
 }
 
 /*********** Spotlight **************/
@@ -113,10 +197,24 @@ nav {
 .spotlight h2{
 	font-family: 'Optima-Bold';
 }
-/* lines */
-.spotlight #slLine{
-	border-width: 5px;
+/* spotlight section */
+.spotlight #spot-title-box{
+	text-align: center;
+	position: relative;
+}
+.spotlight #sl-line{
+	border-top: 4px solid;
 	border-color: #C8322E;
+	position: absolute;
+	top: 50%;
+}
+.spotlight #spot-title{
+	box-sizing: border-box;
+	position: relative;
+	background-color: #fff;
+	padding: 16px;
+	width: auto;
+	display: inline-block;
 }
 .spotlight .spot-story{
 	width: 100%;
@@ -125,27 +223,26 @@ nav {
 	border-color: #D5D2CD;
 }
 /* positioning */
-.spotlight #col1{
-	padding-right: 16px;
-	padding-left: 0px;
-}
-.spotlight #col2{
+.spotlight .spot-col{
 	padding-right: 16px;
 	padding-left: 16px;
 }
-.spotlight #col3{
-	padding-right: 0px;
-	padding-left: 16px;
-}
-.spotlight .spot-body{
+.spotlight .spot-story{
 	padding-top: 24px;
 	padding-bottom: 24px;
+}
+.spotlight .spot-story a + .spot-body{
+	padding-top: 24px;
 }
 .spotlight .spot-headline{
 	margin-bottom: 5.4px;
 }
-.spot-body.no-top-padding{
+.spot-story:first-child{
 	padding-top: 0px;
+}
+.spot-story:last-child{
+	border-bottom: 0px;
+	padding-bottom: 0px;
 }
 .spot-body img{
 	margin-bottom: 12px;
@@ -156,30 +253,39 @@ nav {
 	/*object-fit: cover;
 	object-position: 50% 50%;*/
 }
-/* by line */
+.spotlight #spot-sec{
+	display: flex;
+	align-items: flex-start;
+	width: 100%;
+}
+.spotlight #spot-sec .spot-body{
+	padding-top: 0px;
+	padding-left: 16px;
+}
+/* byline */
 .byline{
-	font-size: 0.7em;
+	font-size: 0.8em;
 	margin-bottom: 5.4px;
 	white-space: nowrap;
 }
 .by{
-	font-size: 0.7em;
+	font-size: 0.8em;
 }
 .name2{
 	font-family: "Optima-ExtraBlack";
 }
 .date{
 	font-family: "Optima-Regular";
-	font-size: 0.7em;
+	font-size: 0.8em;
 }
 /* summary */
 .spotlight .spot-sum{
-	font-family: "Times New Roman"
+	font-family: 'MinionPro-Medium'
 }
-/* col2 story1 */
+/* colmain story1 */
 .spotlight #spot-main{
 	text-align: center;
-	font-size: 225%;
+	font-size: 200%;
 }
 .spotlight #spot-main .byline{
 	font-size: 50%;
@@ -187,8 +293,88 @@ nav {
 .spotlight #spot-main .date{
 	font-size: 50%;
 }
-/* col2 story2 */
+/* colmain story2 */
+.compact-img-wrapper{
+	position: relative;
+	width: 35%;
+}
+.compact-img{
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-top: 57%;
+}
+.compact-img img{
+	display: block;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 0;
+}
 
-.spotlight #spot-sec img{
 
+
+/*********** Large Devices **********/
+@media(min-width: 1200px){
+	.spotlight #colmain{
+		order: 2;
+		-webkit-order: 2;
+	}
+	.spotlight #colsec{
+		order: 3;
+		-webkit-order: 3;
+		padding-right: 0px;
+	}
+	.spotlight #colthd{
+		order: 1;
+		-webkit-order: 1;
+		padding-left: 0px;
+	}
+}
+/*********** Medium Devices *********/
+@media(min-width: 992px) and (max-width: 1199px){
+	.spotlight #colmain{
+		order: 2;
+		-webkit-order: 2;
+	}
+	.spotlight #colsec{
+		order: 3;
+		-webkit-order: 3;
+		padding-right: 0px;
+	}
+	.spotlight #colthd{
+		order: 1;
+		-webkit-order: 1;
+		padding-left: 0px;
+	}
+}
+/********** Small Devices ***********/
+@media(min-width: 768px) and (max-width: 991px){
+	.spotlight #colmain{
+		padding-left: 0px;
+	}
+	.spotlight #colsec{
+		padding-right: 0px;
+	}
+	.spotlight #colthd{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+}
+/*********** Extra Small Devices **********/
+@media(max-width: 767px){
+	.spotlight #colmain{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.spotlight #colsec{
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+	.spotlight #colthd{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
 }
