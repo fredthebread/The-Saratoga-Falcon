@@ -251,7 +251,7 @@ nav {
 	box-sizing: border-box;
 	position: relative;
 	background-color: #fff;
-	padding: 16px;
+	padding: 8px;
 	width: auto;
 	display: inline-block;
 }
@@ -280,15 +280,18 @@ nav {
 	display: flex;
 	align-items: flex-start;
 	width: 100%;
-	padding-top: 24px;
-	padding-bottom: 24px;
+	padding-top: 8px;
+	padding-bottom: 8px;
 	border-bottom-style: solid;
 	border-width: 1px;
 	border-color: #B5B5B5;
 }
 .compact-img-wrapper{
 	position: relative;
-	width: 35%;
+	width: 25%;
+}
+.compact-article-body{
+	width: 75%;
 }
 .compact-img{
 	position: relative;
@@ -338,7 +341,7 @@ h2.headline{
 .spotlight .spot-story a + .spot-body{
 	padding-top: 24px;
 }
-.spotlight .compact-article .spot-body{
+.spotlight .compact-article .spot-body.compact-article-body{
 	padding-top: 0px;
 	padding-left: 16px;
 }
@@ -374,6 +377,7 @@ h2.headline{
 /***********More Articles************/
 #more-articles{
 	padding-left: 0px;
+	padding-top: 8px;
 }
 #list-compact-article:first-child{
 	padding-top: 0px;
@@ -381,12 +385,19 @@ h2.headline{
 #list-compact-article:last-child{
 	border-bottom: 0px;
 }
+#list-compact-article:first-child .compact-img-wrapper{
+	width: 35%;
+}
+#list-compact-article:first-child .compact-article-body{
+	width: 65%;
+}
 #more-articles .compact-article-body{
 	padding-left: 16px;
 }
 #more-articles .article-date{
 	font-size: 1em;
 }
+#more-articles #news
 
 /*********** News ********************/
 #more-articles #news #news-title-box{
@@ -395,6 +406,23 @@ h2.headline{
 #more-articles .section-title{
 	padding-left: 0px;
 }
+
+/************Life and Ent ************/
+#more-articles #life-and-ent{
+	position: relative;
+	display: flex;
+	align-items: flex-start;
+}
+#more-articles #lifestyles{
+	padding-right: 16px;
+	border-right: solid #A5A5A5 0.25px;
+}
+#more-articles #entertainment{
+	padding-left: 16px;
+	border-left: solid #A5A5A5 0.25px;
+}
+
+
 
 /********** Right Bar ************/
 #right-bar{
