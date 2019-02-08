@@ -9,7 +9,7 @@ This is a static website created as a high-fidelity web design for the saratogaf
 * JavaScript
 
 ## Installation:
-Run `git clone https://github.com/kyuwonk/TheSaratogaFalcon.git` then open `index.html` in browser.
+Run `git clone https://github.com/kyuwonk/TheSaratogaFalcon.git` then open `index.html` in a browser.
 
 ## Snapshot:
 ![alt-text](img/preview-img.png "snapshot of homepage")
